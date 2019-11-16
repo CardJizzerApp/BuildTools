@@ -1,0 +1,7 @@
+[
+  {
+    "id": "redeploy-webhook",
+    "execute-command": "/etc/webhook/deploy.sh",
+    "command-working-directory": "/var/webhook"
+  }
+]
