@@ -1,7 +1,7 @@
 FROM ubuntu
 
-RUN apt-get update && apt install --yes webhook docker.io && docker version
+RUN apt-get update && apt install --yes webhook docker.io
 
-ENTRYPOINT ["webhook", "/etc/webhook/hooks.json"]
+CMD ["webhook", "/etc/webhook/hooks.json"]
 
 EXPOSE 9000
